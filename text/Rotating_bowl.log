@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.12.21)  21 FEB 2016 13:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.1.25)  22 FEB 2016 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,8 +259,6 @@ Package babel Info: Making " an active character on input line 90.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
-\l@british = a dialect from \language\l@english 
-\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -902,24 +900,19 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Overfull \hbox (4.4925pt too wide) in paragraph at lines 158--163
-\T1/lmr/m/n/10.95 pli-cated the-o-ret-i-cal calu-cu-la-tions, but the steps
- []
-
-
-Overfull \hbox (2.17958pt too wide) in paragraph at lines 183--189
+] (./rot_bowl_pic.pdf_t
+<rot_bowl_pic.pdf, id=60, 1530.71875pt x 2177.13374pt>
+File: rot_bowl_pic.pdf Graphic file (type pdf)
+ <use rot_bowl_pic.pdf>
+Package pdftex.def Info: rot_bowl_pic.pdf used on input line 2.
+(pdftex.def)             Requested size: 1530.71503pt x 2177.12846pt.
+)
+Overfull \hbox (2.17958pt too wide) in paragraph at lines 193--199
 \T1/lmr/m/n/10.95 mea-sure-ing the fo-cal height for dif-fer-ent speeds
  []
 
-(./rot_bowl_pic.pdf_t <rot_bowl_pic.pdf, id=60, 1530.71875pt x 2177.13374pt>
-File: rot_bowl_pic.pdf Graphic file (type pdf)
-
-<use rot_bowl_pic.pdf>
-Package pdftex.def Info: rot_bowl_pic.pdf used on input line 2.
-(pdftex.def)             Requested size: 1530.71503pt x 2177.12846pt.
-) (./rot_bowl.pdf_t
-<rot_bowl.pdf, id=61, 315.1775pt x 215.80624pt>
+[2 <./rot_bowl_pic.pdf>] (./rot_bowl.pdf_t
+<rot_bowl.pdf, id=71, 315.1775pt x 215.80624pt>
 File: rot_bowl.pdf Graphic file (type pdf)
  <use rot_bowl.pdf>
 Package pdftex.def Info: rot_bowl.pdf used on input line 2.
@@ -930,27 +923,39 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.79996> on input line 14.
 )
-Overfull \hbox (2.60553pt too wide) in paragraph at lines 228--230
+Overfull \hbox (2.60553pt too wide) in paragraph at lines 235--237
 \T1/lmr/m/n/10.95 As shown in Fig-ure []2[] the mea-sured fo-cal height
  []
 
-[2] <g_minsta_kvadrat.pdf, id=75, 529.98pt x 380.42125pt>
+<g_minsta_kvadrat.pdf, id=78, 529.98pt x 380.42125pt>
 File: g_minsta_kvadrat.pdf Graphic file (type pdf)
 
 <use g_minsta_kvadrat.pdf>
-Package pdftex.def Info: g_minsta_kvadrat.pdf used on input line 267.
+Package pdftex.def Info: g_minsta_kvadrat.pdf used on input line 274.
 (pdftex.def)             Requested size: 266.14978pt x 191.04604pt.
- [3 <./rot_bowl.pdf> <./rot_bowl_pic.pdf>]
-Overfull \hbox (2.02489pt too wide) in paragraph at lines 302--309
+
+Overfull \hbox (9.3276pt too wide) in paragraph at lines 286--293
+\T1/lmr/m/n/10.95 the er-ror, of around 13%, in this method doesn't
+ []
+
+[3] [4 <./rot_bowl.pdf> <./g_minsta_kvadrat.pdf>]
+Overfull \hbox (1.00055pt too wide) in paragraph at lines 294--301
+\T1/lmr/m/n/10.95 about $\OT1/lmr/m/n/10.95 9\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/
+10.95 2 []$ \T1/lmr/m/it/10.95 with-out \T1/lmr/m/n/10.95 these cor-rec-tions. 
+This
+ []
+
+
+Overfull \hbox (2.02489pt too wide) in paragraph at lines 315--322
 []\T1/lmr/m/n/10.95 The ex-per-i-ment de-scribed here can be done
  []
 
 
-Overfull \hbox (1.23798pt too wide) in paragraph at lines 312--316
+Overfull \hbox (1.23798pt too wide) in paragraph at lines 325--329
 \T1/lmr/m/n/10.95 the ro-tat-ing disk so that the ex-per-i-ments could
  []
 
-[4 <./g_minsta_kvadrat.pdf>] (./Rotating_bowl.bbl
+(./Rotating_bowl.bbl
 Underfull \hbox (badness 4713) in paragraph at lines 15--18
 []\T1/lmr/m/n/10.95 Carl Nordling and Jonny Öster-man.
  []
@@ -977,29 +982,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
- [5
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
  (./Rotating_bowl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `Rotating_bowl.out' has not changed.
 (rerunfilecheck)             Checksum: 6767D86CDEF094A369B132853BC1BBB7;323.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
  ) 
 Here is how much of TeX's memory you used:
- 10696 strings out of 494466
- 157549 string characters out of 6166386
- 280552 words of memory out of 5000000
- 13664 multiletter control sequences out of 15000+600000
+ 10695 strings out of 494425
+ 157546 string characters out of 6165372
+ 280747 words of memory out of 5000000
+ 13670 multiletter control sequences out of 15000+600000
  84663 words of font info for 72 fonts, out of 8000000 for 9000
- 350 hyphenation exceptions out of 8191
+ 372 hyphenation exceptions out of 8191
  36i,15n,38p,1080b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
 12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/font
@@ -1010,10 +1013,10 @@ texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.
 pfb>
-Output written on Rotating_bowl.pdf (5 pages, 5808170 bytes).
+Output written on Rotating_bowl.pdf (5 pages, 5809133 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
+ 188 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  23 named destinations out of 1000 (max. 500000)
  64 words of extra memory for PDF output out of 10000 (max. 10000000)
 

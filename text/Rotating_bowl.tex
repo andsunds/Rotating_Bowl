@@ -100,8 +100,8 @@
     % }
     \normalsize
     \begin{abstract}
-    This article decribes an inexpensive yet experimentally
-    challengenging way to determine the acceleration of gravity $g$
+    This article decribes an inexpensive, yet experimentally
+    challengenging way to determine the acceleration of gravity $g$,
     using a rotating liquid surface and a laserpointer. The main
     components of this metod is that a rotating liquid surface will
     form a parabola and that this parabola will focus the light to a
@@ -118,31 +118,32 @@
 \section{Introduction}
 The acceleration of gravity, $g$, has been measured countless times in the
 classroom. Usually this is done with some sort of pendulum or free fall. In a
-case of experimental simplicity most of theese methods are hard to beat. However
-they do suffer from a sort of ``dullness'' -- the physics behind them are quite
-basic and only involves Newtonian mechanics. From the student's point of view a
-pendulum experiment for instance won't excite much experimental creativity. 
+case of experimental simplicity most of theese methods are hard to
+beat. However, they do suffer from a sort of ``dullness'' -- the
+physics behind them are quite basic and only involves Newtonian
+mechanics. From the student's point of view, a pendulum experiment for
+instance won't excite much experimental creativity. 
 
 A more thought-provoking way to measure $g$ is to study the surface of a liquid
 in a rotating bowl. By studying the centrifugala force in the rotating bowl
-alongside gravity it can readily be show that the gradient of the liquid surface in
+alongside gravity it can readily be shown that the gradient of the liquid surface in
 the bowl will be proportional to the distance from the axis of rotation. This
 corresponds to a parabola. More precisley the surface will follow the
-equation\cite{Sabatka2010, Berg1990} 
+equation \cite{Sabatka2010, Berg1990} 
 \begin{equation}\label{eq:parabola}
 z(r)=\frac{r^2\omega^2}{2g}
 \end{equation}
 with the notation as in \figref{fig:rot_bowl}. In 2010 \v{S}abatka and
-Dv\v{o}rák\cite{Sabatka2010} confirmed this experimentally using a set of metal
+Dv\v{o}rák \cite{Sabatka2010} confirmed this experimentally using a set of metal
 rods. 
 
-The fact that the surface is parabolic can then be used optically. The parabolic
-shape will reflect any vertically incoming light to the focal point of that
+The fact that the surface is parabolic can then be used optically. A parabolic
+mirror will reflect any vertically incoming light to the focal point of that
 parabola. This property was used by Berg\cite{Berg1990} in 1990 to focus light
 into an optical image. 
 
 The focus of the parabola in \eqref{eq:parabola} is located at the
-height\cite{Physics_Handbook} 
+height \cite{Physics_Handbook} 
 \begin{equation*}
 h=\frac{g}{2\omega^2}
 \end{equation*}
@@ -155,7 +156,7 @@ As we can see here, only the focal height $h$ and the angular
 frequency $\omega$ influence the value of $g$ making this method
 experimentally quite clean with only two parameters to measure. 
 
-All of these steps don't require very complicated theoretical caluculations, but
+Neither of these steps require very complicated theoretical caluculations, but
 the steps are not all trivial. All in all the main principle here will give the
 students an exercise in combinding knowledge from two parts of physics. At the
 same time the student's experimental creativity can be used as there are many
@@ -175,27 +176,6 @@ rotation, and a photodiode for measureing the speed of rotation. The spinning
 disk was driven by a DC motor so the rotational speed could be adjusted by varying
 the voltage applied to the motor. 
 
-The focal point will be located somewhere along the axis of rotation. So when
-shining a laser vertically down on the parabolic surface the refection will hit
-the central rod and the height $h$ over the vertex can be measured
-using a narrow ruler. 
-
-Then by varying the rotational speed and measureing the focal height for
-different speeds a linnear regression could be made for $g$ as the
-slope of the cuve of $h$ plotted against $1/(2\omega^2)$. 
-Measurementswere taken at two different radial distances from the
-center to verify that the radial distance has no impact on the measure
-value of $g$. 
-
-The rotational speed $\omega$ was measured with a photodiode connected
-to a digital oscilloscope wich could record several periods of
-rotation. Though a more readily availible option is to connect the
-photodiode to a computers microphone input and record the signal as a
-``sound'' file on the computer. Since $\omega$ is one of the two
-parameters determining the value of $g$ it's recomendet to measure the
-periods with some kind of digital logging device such as an
-oscilloscope or computer. 
-
 \begin{figure}
 \centering
 %\includegraphics[width=\linewidth]{rot_bowl_pic.jpg}
@@ -204,6 +184,29 @@ oscilloscope or computer.
   reflected beam from a laser pointer (outside frame) can be seen on
   the central rod. } 
 \end{figure}
+
+The focal point will be located somewhere along the axis of rotation. So when
+shining a laser vertically down on the parabolic surface the refection will hit
+the central rod and the height $h$ over the vertex can be measured
+using a narrow ruler. 
+
+Then by varying the rotational speed and measureing the focal height for
+different speeds a linnear regression could be made for $g$ as the
+slope of the cuve of $h$ plotted against $1/(2\omega^2)$. 
+Measurements were taken at two different radial distances from the
+center to verify that the radial distance has no impact on the measured
+value of $g$. 
+
+The rotational speed $\omega$ was measured with a photodiode connected
+to a digital oscilloscope wich could record several periods of
+rotation. Though a more readily availible option is to connect the
+photodiode to a computers microphone input and record the signal as a
+``sound'' file on the computer, as \cite{Sabatka2010} did. Since
+$\omega$ is one of the two parameters directly determining the value
+of $g$, it's recomendet to measure the periods with some kind of
+digital logging device such as an oscilloscope or computer, to
+minimize uncertainty in this parameter.
+
 
 \begin{figure*}\centering
 \resizebox{.6\linewidth}{!}{\input{rot_bowl.pdf_t}}
@@ -222,9 +225,13 @@ rotating. The laserbeam will then be perfectly vertical when the
 reflection hits the source due to the watersurface beeing perfectly
 horisontal when still.
 
+To get the central rod centered, a center mark was put in the rotating
+disc. A spirit level was used to ensure that the central rod was
+vertical. Both of these steps are essential, since deviation from the
+center will change the measure value of $g$, as we will see in next
+section. 
 
-
-\subsection{Corrections}
+\subsection{Corrections}\label{sec:corrections}
 As shown in \figref{fig:rot_bowl} the measured focal height
 $\hat{h}$ is slightly of from the real focal height by 
 \begin{equation*}%\label{eq:correction}
@@ -276,36 +283,42 @@ the uncertainty given is the standard deviation in the mean.
 
 
 \section{Discussion}
-As we can see the result comes out close to the familiar value of $g$
-as $\unit[9.8]{m/s^2}$. However the error in this method doesn't make
-this the most accurate way to measure $g$, bus as stated before this
-method is more of an educational experiment than a precision
-measurement. And as such this experiment manages to combine both
-knowlege in mechanics and optics together with some careful thought
-needet to for example find the correction $\delta$.
-
+As we can see, the result comes out close to the familiar value of $g$
+as $\unit[9.8]{m/s^2}$. However, the error, of around 13\,\%, in this
+method doesn't make this the most accurate way to measure $g$, but as
+stated before this method is more of an educational experiment than a
+precision measurement. And as such, this experiment manages to combine
+both knowlege in mechanics and optics together with some careful
+thought needed to, for example, find the correction $\delta$.
 
 The significance of the correction due to finite width of the central
-rod$\delta$ is quite notable. The value of $g$ comes out to be only
-about $\unit[9.2]{m/s^2}$ \emph{without} these corrections. 
+rod, $\delta$, is quite notable. The value of $g$ comes out to be only
+about $\unit[9.2]{m/s^2}$ \emph{without} these corrections. This
+demonstrates the necessity of the calculations made in section
+\ref{sec:corrections}. 
 %So if a student don't take this into account he or she will notice it
 %and have to examine his or her experiment.
 
 Most of the uncertainty in the result arose from small ripples on the
-water surface leading to gittery motion of the reflected
+water surface leading to a gittery motion of the reflected
 laserbeam. Both Berg\cite{Berg1990} and IPhO\cite{IPhO2001} used
-glycerin as the liqud in thier experiments which would have lessend
-the ripples causing our uncertainties. However as this experiment was
-primarily aimed as an experiment with a simple and inexpensive setup
-we used water instead. 
+glycerin as the liqud in thier experiments. Due to the high viscosity
+of glycerin, the ripples causing the uncertainties would have lessend.
+However as this experiment was primarily aimed as an experiment with a
+simple and inexpensive setup we used water instead.  
+
+Another way to increas accuracy would be to use a bigger bowl,
+preferably a bowl with vertical walls. Because the maximal rotational
+speed will be limited by the slope of the walls, since the walls have
+to have a steeper slope than the watersurface.
 
 The experiment described here can be done as a shorter project in high
 school or lab exercise for first year undergraduate students. One
-sholud note though that to set up this experiment will around
-2--4~hours from scratch to finished measurements depending on the
-desired experimental accuracy. If this experiment is done as a project
-the student could perhaps also try to compare this method to other
-more common methods.
+sholud note though, that to set up this experiment will take around
+2--4~hours from scratch to finished measurements, depending on the
+desired experimental accuracy. If this experiment is done as a
+project, the student could perhaps also try to compare this method to
+other more common methods.
 
 
 \section*{Acknowledgments}
