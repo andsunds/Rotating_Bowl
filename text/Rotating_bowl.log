@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.1.25)  22 FEB 2016 18:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.1.25)  22 FEB 2016 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,21 +736,21 @@ LaTeX Warning: Unused global option(s):
 (./Rotating_bowl.aux)
 \openout1 = `Rotating_bowl.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 78.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -783,7 +783,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 77.
+Package hyperref Info: Link coloring OFF on input line 78.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -793,9 +793,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
 
 (./Rotating_bowl.out) (./Rotating_bowl.out)
 \@outlinefile=\write3
@@ -827,14 +827,14 @@ Package caption Info: End \AtBeginDocument code.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
-* v-part:(T,H,B)=(113.81102pt, 567.34795pt, 113.81102pt)
+* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=443.57848pt
-* \textheight=567.34795pt
+* \textheight=595.8007pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=4.54103pt
+* \topmargin=-9.68535pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -852,51 +852,51 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 115.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 116.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 115.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 116.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 115
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 116
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 115
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 116
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 115.
+(Font)              <12> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 115.
+(Font)              <8> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 115.
+(Font)              <6> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 115.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 115.
+(Font)              <5> on input line 116.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 116.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 115.
+(Font)              <9> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 115.
+(Font)              <10> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 115.
+(Font)              <7> on input line 116.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 119.
+(Font)              <10.95> on input line 120.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -907,14 +907,14 @@ File: rot_bowl_pic.pdf Graphic file (type pdf)
 Package pdftex.def Info: rot_bowl_pic.pdf used on input line 2.
 (pdftex.def)             Requested size: 1530.71503pt x 2177.12846pt.
 )
-Overfull \hbox (2.17958pt too wide) in paragraph at lines 193--199
+Overfull \hbox (2.17958pt too wide) in paragraph at lines 194--200
 \T1/lmr/m/n/10.95 mea-sure-ing the fo-cal height for dif-fer-ent speeds
  []
 
-[2 <./rot_bowl_pic.pdf>] (./rot_bowl.pdf_t
-<rot_bowl.pdf, id=71, 315.1775pt x 215.80624pt>
+(./rot_bowl.pdf_t <rot_bowl.pdf, id=62, 315.1775pt x 215.80624pt>
 File: rot_bowl.pdf Graphic file (type pdf)
- <use rot_bowl.pdf>
+
+<use rot_bowl.pdf>
 Package pdftex.def Info: rot_bowl.pdf used on input line 2.
 (pdftex.def)             Requested size: 315.17673pt x 215.80571pt.
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 14.
@@ -922,8 +922,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14> on input line 14.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9.79996> on input line 14.
-)
-Overfull \hbox (2.60553pt too wide) in paragraph at lines 235--237
+) [2 <./rot_bowl_pic.pdf>]
+Overfull \hbox (2.60553pt too wide) in paragraph at lines 236--238
 \T1/lmr/m/n/10.95 As shown in Fig-ure []2[] the mea-sured fo-cal height
  []
 
@@ -931,31 +931,31 @@ Overfull \hbox (2.60553pt too wide) in paragraph at lines 235--237
 File: g_minsta_kvadrat.pdf Graphic file (type pdf)
 
 <use g_minsta_kvadrat.pdf>
-Package pdftex.def Info: g_minsta_kvadrat.pdf used on input line 274.
-(pdftex.def)             Requested size: 266.14978pt x 191.04604pt.
+Package pdftex.def Info: g_minsta_kvadrat.pdf used on input line 275.
+(pdftex.def)             Requested size: 288.32329pt x 206.96266pt.
 
-Overfull \hbox (9.3276pt too wide) in paragraph at lines 286--293
+Overfull \hbox (9.3276pt too wide) in paragraph at lines 287--294
 \T1/lmr/m/n/10.95 the er-ror, of around 13%, in this method doesn't
  []
 
-[3] [4 <./rot_bowl.pdf> <./g_minsta_kvadrat.pdf>]
-Overfull \hbox (1.00055pt too wide) in paragraph at lines 294--301
+[3 <./rot_bowl.pdf>]
+Overfull \hbox (1.00055pt too wide) in paragraph at lines 295--302
 \T1/lmr/m/n/10.95 about $\OT1/lmr/m/n/10.95 9\OML/lmm/m/it/10.95 :\OT1/lmr/m/n/
 10.95 2 []$ \T1/lmr/m/it/10.95 with-out \T1/lmr/m/n/10.95 these cor-rec-tions. 
 This
  []
 
 
-Overfull \hbox (2.02489pt too wide) in paragraph at lines 315--322
+Overfull \hbox (2.02489pt too wide) in paragraph at lines 316--323
 []\T1/lmr/m/n/10.95 The ex-per-i-ment de-scribed here can be done
  []
 
 
-Overfull \hbox (1.23798pt too wide) in paragraph at lines 325--329
+Overfull \hbox (1.23798pt too wide) in paragraph at lines 326--330
 \T1/lmr/m/n/10.95 the ro-tat-ing disk so that the ex-per-i-ments could
  []
 
-(./Rotating_bowl.bbl
+[4 <./g_minsta_kvadrat.pdf>] (./Rotating_bowl.bbl
 Underfull \hbox (badness 4713) in paragraph at lines 15--18
 []\T1/lmr/m/n/10.95 Carl Nordling and Jonny Öster-man.
  []
@@ -982,27 +982,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--24
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+ [5
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (./Rotating_bowl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `Rotating_bowl.out' has not changed.
 (rerunfilecheck)             Checksum: 6767D86CDEF094A369B132853BC1BBB7;323.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 346.
  ) 
 Here is how much of TeX's memory you used:
- 10695 strings out of 494425
- 157546 string characters out of 6165372
- 280747 words of memory out of 5000000
- 13670 multiletter control sequences out of 15000+600000
+ 10696 strings out of 494425
+ 157554 string characters out of 6165372
+ 279748 words of memory out of 5000000
+ 13671 multiletter control sequences out of 15000+600000
  84663 words of font info for 72 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 36i,15n,38p,1080b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,38p,1080b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texmf/fonts/type1/public/lm
 /lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
 12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/font
@@ -1013,7 +1015,7 @@ texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.
 pfb>
-Output written on Rotating_bowl.pdf (5 pages, 5809133 bytes).
+Output written on Rotating_bowl.pdf (5 pages, 5808601 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams

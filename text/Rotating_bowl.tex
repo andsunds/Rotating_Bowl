@@ -63,8 +63,8 @@
 
 %%För att själv bestämma marginalerna. 
 \usepackage[
-            top    = 4cm,
-            bottom = 4cm,
+            top    = 3.5cm,
+            bottom = 3.5cm,
             left   = 3cm, right  = 3cm
 ]{geometry}
 
@@ -73,6 +73,7 @@
 
 %\usepackage{multicol}
 %\usepackage{float}
+
 
 \begin{document}
 
@@ -91,8 +92,8 @@
     \noindent\footnotesize
     * Engineering Physics, Chalmers University of Technology, Gothenburg, Sweden\\
     E-mail:
-    \textcolor{blue}{
-      \href{mailto:sundstrom.andreas@gmail.com}{\nolinkurl{sundstrom.andreas@gmail.com}}
+    \textcolor{blue}{ \newcommand{\andsunds}{andsunds@chalmers.se}
+      \href{mailto:\andsunds}{\nolinkurl{\andsunds}}
     }
     % and 
     % \textcolor{blue}{
@@ -271,7 +272,7 @@ the uncertainty given is the standard deviation in the mean.
 
 
 \begin{figure*}\centering 
-\includegraphics[width=.6\linewidth]{g_minsta_kvadrat.pdf}
+\includegraphics[width=.65\linewidth]{g_minsta_kvadrat.pdf}
 \caption{\label{fig:data} Measurements of the focal height $h$ (with
   corrections for a center rod of non-zero width) plotted against
   $1/(2\omega^2)$. The acceleration of gravity $g$ is now given as the
