@@ -62,6 +62,8 @@ f = @(k) sum((H-k*T.^2/(pi^2*8)).^2);
 g2=fminbnd(f,9,10);
 fprintf('g är med minsta kvadrat: %0.3f \n\n', g2)
 
+[g3, std_g]=lscov(omega_kvadrat.', H.');
+
 x=linspace(0,.016);
 hold on
 %plot(x,g1*x);

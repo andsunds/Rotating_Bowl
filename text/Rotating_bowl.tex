@@ -1,65 +1,13 @@
 \documentclass[11pt,towcolumn, swedish, english]{article}
 \pdfoutput=1
-%vons grund
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{babel} %OBS! Se till att vi får rätt språk.
-\usepackage{amsmath}
-\usepackage{lmodern}
-\usepackage{units}
-\usepackage{icomma}
-\usepackage{color}
-\usepackage{graphicx}
+
+
+\usepackage{custom_as}
+
 \graphicspath{ {Figures/} }
-\usepackage{bbm}
-\newcommand{\N}{\ensuremath{\mathbbm{N}}}
-\newcommand{\Z}{\ensuremath{\mathbbm{Z}}}
-\newcommand{\Q}{\ensuremath{\mathbbm{Q}}}
-\newcommand{\R}{\ensuremath{\mathbbm{R}}}
-\newcommand{\C}{\ensuremath{\mathbbm{C}}}
-\newcommand{\rd}{\ensuremath{\mathrm{d}}}
-\newcommand{\id}{\ensuremath{\,\rd}}
-\usepackage{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%%%%Egna tillägg%%%%%%%%%%%%%%%%%%%%%%%
-%%För att få referenser 'på svenska'
-\usepackage{babelbib}
-%\selectbiblanguage{swedish}
-%\renewcommand\btxauthorcolon{:}
-%%För att figurtext i underfigurer
-\usepackage{subfigure} 
-%%För att kunna inkludera andra PDF-dokument
-\usepackage{pdfpages}
-%%För att kunna ha roterade bilder
-\usepackage{rotating}
-%%För att kunna lägga till 'bilagor' utan sidnumrering.
-%\usepackage{tocstyle}
-%\usetocstyle{standard}%För att få en vanlig TOC
-                %no page numbers for part
-%\settocstylefeature[-1]{pagenumberbox}{\csname @gobble\endcsname}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%Formatering%%%%%%%%%%%%%%%%%%%%%%%%
-%%Partiell derivata
-\newcommand{\pd}{\ensuremath{\partial}}
-%%Följer ISO-8601 oberoende av språk.
-\usepackage[iso]{isodate}
-\usepackage{datetime} 
-%\newdateformat{specialdate}{\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}}
-%%Göra grader Celcius
-\newcommand{\degC}{\ifmmode \,^\circ\mathrm{C} \else $\,^\circ\mathrm{C}$ \fi}
-%%Figurreferenser
-\newcommand{\figref}{\figurename~\ref} 
-%%Tabellreferenser
-\newcommand{\tabref}{\tablename~\ref} %Stor bokstav i början
-%%Det ska vara ett rakt µ i prefixet
-\usepackage{upgreek}
-\newcommand{\micro}{\upmu}
-%%Ohm enhetskommando
-\newcommand{\ohm}{\ifmmode \Upomega \else $\Upomega$ \fi}
-
 \usepackage[margin=10pt, font=small]{caption}
+%%För att lägga in 'att göra'-noteringar i texten
+\usepackage{todonotes} %\todo{...}, \todolist
 
 
 %%För att själv bestämma marginalerna. 
@@ -72,8 +20,7 @@
 %%För att ändra hur rubrikerna ska formateras
 %\renewcommand\thesection{...}
 
-%\usepackage{multicol}
-%\usepackage{float}
+
 
 
 \begin{document}
@@ -81,7 +28,7 @@
 \title{Measurement of the acceleration of gravity by locating the
   focal point of a rotating water surface} 
 
-\author{Andréas Sundström \footnotemark 
+\author{Andréas Sundström \footnotemark
 %\and Johan Runeson\footnotemark[1]
 }
 \date{\today}
@@ -91,8 +38,8 @@
   \begin{@twocolumnfalse}
     \maketitle
     \noindent\footnotesize
-    * Engineering Physics, Chalmers University of Technology, Gothenburg, Sweden\\
-    E-mail:
+    * Engineering Physics, Chalmers University of Technology,
+    Gothenburg, Sweden\\ 
     \textcolor{blue}{ \newcommand{\andsunds}{andsunds@chalmers.se}
       \href{mailto:\andsunds}{\nolinkurl{\andsunds}}
     }
@@ -121,36 +68,42 @@
 The acceleration of gravity, $g$, has been measured countless times in the
 classroom. Usually this is done with some sort of pendulum or free fall. In a
 case of experimental simplicity most of theese methods are hard to
-beat. However, they do suffer from a sort of ``dullness'' -- the
+beat. 
+However, they do suffer from a sort of ``dullness''\todo{Skriv om} -- the
 physics behind them are quite basic and only involves Newtonian
 mechanics. From the student's point of view, a pendulum experiment for
 instance won't excite much experimental creativity. 
 
-A more thought-provoking way to measure $g$ is to study the surface of a liquid
-in a rotating bowl. By studying the centrifugala force in the rotating bowl
-alongside gravity it can readily be shown that the gradient of the liquid surface in
-the bowl will be proportional to the distance from the axis of rotation. This
-corresponds to a parabola. More precisley the surface will follow the
-equation \cite{Sabatka2010, Berg1990} 
+
+
+\subsection{Description of th experiment }
+A more thought-provoking way to measure $g$ is to study the surface of
+a liquid in a rotating bowl. By studying the centrifugala force in the
+rotating bowl alongside gravity it can readily be shown that the
+gradient of the liquid surface in the bowl will be proportional to the
+distance from the axis of rotation. This corresponds to a
+parabola. More precisley the surface will follow the
+equation~\cite{Sabatka2010, Berg1990} 
 \begin{equation}\label{eq:parabola}
 z(r)=\frac{r^2\omega^2}{2g}
 \end{equation}
 with the notation as in \figref{fig:rot_bowl}. In 2010 \v{S}abatka and
-Dv\v{o}rák \cite{Sabatka2010} confirmed this experimentally using a set of metal
-rods. 
+Dv\v{o}rák~\cite{Sabatka2010} confirmed this experimentally using a
+set of metal rods. 
 
-The fact that the surface is parabolic can then be used optically. A parabolic
-mirror will reflect any vertically incoming light to the focal point of that
-parabola. This property was used by Berg\cite{Berg1990} in 1990 to focus light
-into an optical image. 
+The fact that the surface is parabolic can then be used optically. A
+parabolic mirror will reflect any vertically incoming light to the
+focal point of that parabola. This property was used by
+Berg~\cite{Berg1990} in 1990 to focus light into an optical image. 
 
 The focus of the parabola in \eqref{eq:parabola} is located at the
-height \cite{Physics_Handbook} 
+height~\cite{Physics_Handbook} 
 \begin{equation*}
 h=\frac{g}{2\omega^2}
 \end{equation*}
-above the vertex of the parabola. So by locating the focal point of the parabola in \eqref{eq:parabola} the value of
-$g$ can then be caluclated as
+above the vertex of the parabola. So by locating the focal point of
+the parabola in \eqref{eq:parabola} the value of $g$ can then be
+caluclated as 
 \begin{equation*}
 g=2h\omega^2.
 \end{equation*}
@@ -159,32 +112,70 @@ frequency $\omega$ influence the value of $g$ making this method
 experimentally quite clean with only two parameters to measure. 
 
 Neither of these steps require very complicated theoretical caluculations, but
-the steps are not all trivial. All in all the main principle here will give the
-students an exercise in combinding knowledge from two parts of physics. At the
-same time the student's experimental creativity can be used as there are many
-ways of locating the focal point. 
+the steps are not all trivial. All in all the main principle here will
+give the students an exercise in combinding knowledge from two parts
+of physics. At the same time the student's experimental creativity can
+be used as there are many ways of locating the focal point. 
 
-A similar method have even been used as part of an
-experimental problem in the International Physics Olympiad (IPhO)
-2001\cite{IPhO2001}. IPhO is an international physics competition for
-talented high school students from about 80 countries. So this method
-already have quite good gounds as a challenging lab exercise.
+A similar method have even been used as part of an experimental
+problem in the International Physics Olympiad (IPhO\footnotemark{})
+2001~\cite{IPhO2001}. So this method already have quite good gounds as
+a challenging lab exercise. However, in IPhO a different aspect of the
+parabolic surface was used to determine $g$. 
+\footnotetext{IPhO is an international physics competition for
+  talented high school students from about 80 countries. } 
+
+\subsection{Initial theoretical analysis}
+As said in the previous section, the parabolic shape of the surface
+can easily be derived with the forces in a rotating system of
+reference. This will result in the full formula in
+\eqref{eq:parabola}, including the numerical factor. 
+However, as a first exercie, it's also quite easy to derive a parabolic
+surface from dimentional analysis. 
+
+To begin with, an assessment of which parameters will affect $z$, must
+be made. One can here convince oneself that $z$, ideally, should be a
+function of the three parameters $r$, $\omega$, and~$g$.
+If a power law is assumed,
+then there arise two main alternatives satisfying the
+dimentions. Either
+\begin{equation*}
+z\propto\frac{g^\alpha}{\omega^{2\alpha} r^{\alpha-1}}
+\qcomma \text{or } z\propto\frac{r^{\alpha+1}\omega^{2\alpha}}{g^\alpha},
+\end{equation*}
+where $\alpha$ is a positive number. 
+
+In essence, both alternatives really are
+the same if $\alpha$ were alowed to be negative as well. But $\alpha$ is
+chosen positive, to illustrate the main difference between the two
+alternatives. Which is that $r$ will eiter be in the numerator or the
+denominator. It's known from experience and intuition,\todo{?} 
+that water in a rotating bowl is pushed out, and the surface should be
+higher towards the side of the bowl. Therefore the second alternative
+should be the correct desrciption of the water surface. 
+
+A dimentional analysis can therefore be used to determine the relation
+between the parameters. But experiements or other theoretical analysis
+is needed to fully arrive at \eqref{eq:parabola}. In this article
+however, the measure ment of $g$ is derived from \eqref{eq:parabola}. 
+
 
 
 \section{The apparatus and measuring method}
 The apparatus shown in \figref{fig:rot_bowl_pic} consists of a bowl of water
 on a spinning disk, a laserpointer, a central rod marking out the axis of
 rotation, and a photodiode for measureing the speed of rotation. The spinning
-disk was driven by a DC motor so the rotational speed could be adjusted by varying
-the voltage applied to the motor. 
+disk was driven by a DC motor so the rotational speed could be
+adjusted by varying the voltage applied to the motor. 
 
 \begin{figure}
 \centering
 %\includegraphics[width=\linewidth]{rot_bowl_pic.jpg}
-\resizebox{0.8\linewidth}{!}{\input{Figures/rot_bowl_pic.pdf_t}}
-\caption{\label{fig:rot_bowl_pic} A photograph of the setup running. The
-  reflected beam from a laser pointer (outside frame) can be seen on
-  the central rod. } 
+\resizebox{0.7\linewidth}{!}{\input{Figures/rot_bowl_pic.pdf_t}}
+\caption{A photograph of the setup running. The
+  reflected beam from a laser pointer (outside frame) can be seen at
+  the focal point on the central rod. } 
+\label{fig:rot_bowl_pic} 
 \end{figure}
 
 The focal point will be located somewhere along the axis of rotation. So when
