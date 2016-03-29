@@ -37,11 +37,13 @@ W=[w1, w2];
 
 %f1=@(v) cot(v)+r/(2*(r-rho))*tan(v/2)-h./(r-rho);
 alfa=zeros(1,length(h1));
-
+alfa2=zeros(1,length(h1));
 for i=1:length(h)
     f=@(v) cot(v)+r(i)/(2*(r(i)-rho))*tan(v/2)-h(i)./(r(i)-rho);
+    f2=@(v) cot(v)+r(i)/(2*r(i))*tan(v/2)-h(i)./r(i);
     
     alfa(i)=fsolve(f,atan(h(i)/r(i)));clc
+    alfa2(i)=fsolve(f2,atan(h(i)/r(i)));clc
 end
 
 
@@ -70,8 +72,12 @@ hold on
 err1=delta(1:length(T1));
 err2=delta((1+length(T1)):end);
 
-errorbar(omega_kvadrat(1:length(T1)) , H(1:length(T1))*1e3, err1*1e3, '.', 'markersize',16)
-errorbar(omega_kvadrat((1+length(T1)):end) , H((1+length(T1)):end)*1e3, err2*1e3, '*r', 'markersize',8)
+%errorbar(omega_kvadrat(1:length(T1)) , H(1:length(T1))*1e3, err1*1e3, '.', 'markersize',16)
+%errorbar(omega_kvadrat((1+length(T1)):end) , H((1+length(T1)):end)*1e3, err2*1e3, '*r', 'markersize',8)
+
+plot(omega_kvadrat(1:length(T1)) , H(1:length(T1))*1e3, '.', 'markersize',16)
+plot(omega_kvadrat((1+length(T1)):end) , H((1+length(T1)):end)*1e3, '*r', 'markersize',8)
+
 p=plot(x,x*g2*1e3, 'k');
 axis([0, 0.016, 0, 160])
 %grid on
@@ -84,7 +90,7 @@ ylabel(ytext, 'Interpreter', 'Latex', 'FontSize', 20, 'Color', 'k');
 set(gca,'FontSize',15, 'xtick',(0:4:16)*1e-3);
 
 
-l=legend('$r=7{,}4$\,cm', '$r=6{,}3$\,cm', '$g/(2\omega^2)$: $g=9{,}78$\,m\,s$^{-2}$');
+l=legend('$r=7{,}4$\,cm', '$r=6{,}3$\,cm', '$g/(2\omega^2)$: $g=9.78$\,m\,s$^{-2}$');
 set(l,'interpreter', 'latex', 'fontsize', 18, 'location', 'southeast')
 
 
