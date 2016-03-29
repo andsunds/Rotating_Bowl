@@ -28,8 +28,8 @@
 \title{Measurement of the acceleration of gravity by locating the
   focal point of a rotating water surface} 
 
-\author{Andréas Sundström \footnotemark
-%\and Johan Runeson\footnotemark[1]
+\author{Andréas Sundström$^*$
+\and Tom Adawi$^\dagger$
 }
 \date{\today}
 
@@ -37,13 +37,14 @@
 \twocolumn[
   \begin{@twocolumnfalse}
     \maketitle
-    \noindent\footnotesize
-    * Engineering Physics, Chalmers University of Technology,
+    \noindent\small%footnotesize
+    $^*$ Engineering Physics, Chalmers University of Technology,
     Gothenburg, Sweden\\ 
     \textcolor{blue}{ \newcommand{\andsunds}{andsunds@chalmers.se}
       \href{mailto:\andsunds}{\nolinkurl{\andsunds}}
     }
-    % and 
+    \\
+    $^\dagger$ ...
     % \textcolor{blue}{
     %   \href{mailto:johan.runeson@gmail.com}{\nolinkurl{johan.runeson@gmail.com}}
     % }
@@ -67,30 +68,109 @@
 \section{Introduction}
 The acceleration of gravity, $g$, has been measured countless times in the
 classroom. Usually this is done with some sort of pendulum or free fall. In a
-case of experimental simplicity most of theese methods are hard to
-beat. 
-However, they do suffer from a sort of ``dullness''\todo{Skriv om} -- the
-physics behind them are quite basic and only involves Newtonian
-mechanics. From the student's point of view, a pendulum experiment for
-instance won't excite much experimental creativity. 
+case of experimental simplicity most of theese methods are hard to beat. 
+However, most pendulum experiments are done from an expositiory
+instruction, which is one of the most critizied laboratory
+intructions~\cite{Domin1999}. From the student's point of view, a pendulum experiment
+won't excite much experimental creativity --- there's only to follow the
+given ``recipe''. 
 
-
-
-\subsection{Description of th experiment }
 A more thought-provoking way to measure $g$ is to study the surface of
-a liquid in a rotating bowl. By studying the centrifugala force in the
-rotating bowl alongside gravity it can readily be shown that the
-gradient of the liquid surface in the bowl will be proportional to the
-distance from the axis of rotation. This corresponds to a
-parabola. More precisley the surface will follow the
+a liquid in a rotating bowl. More precisely, the watersurface will
+form a parabolic mirror, which will focus incoming planar light. This
+is a property of parabolic mirrors most of us are familiar with, but
+have never observed directly. 
+
+A similar method have been used as part of an experimental
+problem in the International Physics Olympiad (IPhO\footnotemark{})
+2001~\cite{IPhO2001}. So this method already have quite good gounds as
+a challenging lab exercise. However, in IPhO a different aspect of the
+parabolic surface was used to determine $g$. Other than this, no
+previous description of the use of a rotating liquid surface to
+dertermine $g$ have been found.
+\footnotetext{IPhO is an international physics competition for
+  talented high school students from about 80 countries. } 
+
+
+
+\subsection{Initial theoretical analysis}
+To show that a liquid in a rotating vessel will form a parabolic
+surface, one can either study the forces on the liquid in the rotating
+frame of reference or simply start with some dimensional analysis. The
+study of the forces have been done before~\cite{Sabatka2010, Berg1990}
+and are not that hard to do. As to not repeat what's already been
+done, a short dinesional analysis is presented here instead of the
+full derivation. 
+
+All symbols used in the following sections are given in
+\figref{fig:rot_bowl}. 
+
+\begin{figure*}\centering
+\resizebox{.6\linewidth}{!}{\input{Figures/rot_bowl.pdf_t}}
+\caption{Schematic drawing of the setup together with the definitions
+  of the notation used in the calculations. Due to the focal height
+  beeing measured slightly outside the exact center of the rod, by
+  $\rho$, a small correction $\delta$ has to be made to the measured
+  focal height.} 
+\label{fig:rot_bowl} 
+\end{figure*}
+
+\subsubsection{Dimensional analysis}
+The method in this article relies on the fact that the surface is
+parabolic, but it won't use this dimensional analysis any further than
+as a novel way to, almost, derive the fomula of the surface in a
+rotating bowl. 
+
+To begin with, an assessment of which parameters will affect $z$ must
+be made. One can here convince oneself that $z$, ideally, should be a
+function of the three parameters $r$, $\omega$, and~$g$. If a power
+law is assumed, the relationship can be written as
+\begin{equation}
+z\propto r^a\, \omega^b\, g^c.
+\end{equation}
+Here there are three unknown exponents.
+
+However, it's easier to study the relationships of dinesionless
+parameters, so $z/r$ is studied instead. Since this is dimensionless,
+the relation to $z/r$ must be with other parameters which are also
+dimensionless. The only posible solution is therefore
+\begin{equation}\label{eq:dim}
+\frac{z}{r} \propto \left(\frac{r\omega^2}{g}\right)^\alpha, 
+\end{equation}
+where $\alpha$ now is the only unkown exponent.
+
+Furthermore, the surface should be smooth ererywhere. In particular,
+the center of rotation can be a problem. The only possibility to get a
+smooth surface in the center is if $\nicefrac{\rd{z}}{\rd{r}}=0$ when
+$r=0$. This and \eqref{eq:dim} leads to the conclution that $\alpha>0$.
+
+More than this can not be said about the surface given only a
+dimensional analysis. Since it's known that the surface should be
+parabolic, it follows that $\alpha=1$. 
+Which is probably one of the most likely hypothesis a student would've
+made at a first glance.  
+
+\subsubsection{Theoretical and experimental confirmation}
+The dimensional analysis showed that more information is needed to get
+the full picture of the situation. To get this, one can look at the
+forces acting on the liquid.
+
+By studying the centrifugal force in the rotating frame of reference
+alongside gravity, it can readily be shown that the gradient of the
+liquid surface will be proportional to the distance from the axis of
+rotation. This corresponds to a parabola. 
+
+More precisley the surface will follow the
 equation~\cite{Sabatka2010, Berg1990} 
 \begin{equation}\label{eq:parabola}
-z(r)=\frac{r^2\omega^2}{2g}
+z(r)=\frac{r^2\omega^2}{2g}.
 \end{equation}
-with the notation as in \figref{fig:rot_bowl}. In 2010 \v{S}abatka and
+In 2010 \v{S}abatka and
 Dv\v{o}rák~\cite{Sabatka2010} confirmed this experimentally using a
 set of metal rods. 
 
+
+\subsection{Description of the experiment }
 The fact that the surface is parabolic can then be used optically. A
 parabolic mirror will reflect any vertically incoming light to the
 focal point of that parabola. This property was used by
@@ -98,15 +178,15 @@ Berg~\cite{Berg1990} in 1990 to focus light into an optical image.
 
 The focus of the parabola in \eqref{eq:parabola} is located at the
 height~\cite{Physics_Handbook} 
-\begin{equation*}
+\begin{equation}
 h=\frac{g}{2\omega^2}
-\end{equation*}
+\end{equation}
 above the vertex of the parabola. So by locating the focal point of
 the parabola in \eqref{eq:parabola} the value of $g$ can then be
 caluclated as 
-\begin{equation*}
+\begin{equation}
 g=2h\omega^2.
-\end{equation*}
+\end{equation}
 As we can see here, only the focal height $h$ and the angular
 frequency $\omega$ influence the value of $g$ making this method
 experimentally quite clean with only two parameters to measure. 
@@ -117,51 +197,10 @@ give the students an exercise in combinding knowledge from two parts
 of physics. At the same time the student's experimental creativity can
 be used as there are many ways of locating the focal point. 
 
-A similar method have even been used as part of an experimental
-problem in the International Physics Olympiad (IPhO\footnotemark{})
-2001~\cite{IPhO2001}. So this method already have quite good gounds as
-a challenging lab exercise. However, in IPhO a different aspect of the
-parabolic surface was used to determine $g$. 
-\footnotetext{IPhO is an international physics competition for
-  talented high school students from about 80 countries. } 
-
-\subsection{Initial theoretical analysis}
-As said in the previous section, the parabolic shape of the surface
-can easily be derived with the forces in a rotating system of
-reference. This will result in the full formula in
-\eqref{eq:parabola}, including the numerical factor. 
-However, as a first exercie, it's also quite easy to derive a parabolic
-surface from dimentional analysis. 
-
-To begin with, an assessment of which parameters will affect $z$, must
-be made. One can here convince oneself that $z$, ideally, should be a
-function of the three parameters $r$, $\omega$, and~$g$.
-If a power law is assumed,
-then there arise two main alternatives satisfying the
-dimentions. Either
-\begin{equation*}
-z\propto\frac{g^\alpha}{\omega^{2\alpha} r^{\alpha-1}}
-\qcomma \text{or } z\propto\frac{r^{\alpha+1}\omega^{2\alpha}}{g^\alpha},
-\end{equation*}
-where $\alpha$ is a positive number. 
-
-In essence, both alternatives really are
-the same if $\alpha$ were alowed to be negative as well. But $\alpha$ is
-chosen positive, to illustrate the main difference between the two
-alternatives. Which is that $r$ will eiter be in the numerator or the
-denominator. It's known from experience and intuition,\todo{?} 
-that water in a rotating bowl is pushed out, and the surface should be
-higher towards the side of the bowl. Therefore the second alternative
-should be the correct desrciption of the water surface. 
-
-A dimentional analysis can therefore be used to determine the relation
-between the parameters. But experiements or other theoretical analysis
-is needed to fully arrive at \eqref{eq:parabola}. In this article
-however, the measure ment of $g$ is derived from \eqref{eq:parabola}. 
 
 
 
-\section{The apparatus and measuring method}
+\section{Method and apparatus}
 The apparatus shown in \figref{fig:rot_bowl_pic} consists of a bowl of water
 on a spinning disk, a laserpointer, a central rod marking out the axis of
 rotation, and a photodiode for measureing the speed of rotation. The spinning
@@ -201,16 +240,6 @@ digital logging device such as an oscilloscope or computer, to
 minimize uncertainty in this parameter.
 
 
-\begin{figure*}\centering
-\resizebox{.6\linewidth}{!}{\input{Figures/rot_bowl.pdf_t}}
-\caption{\label{fig:rot_bowl} Schematic drawing of the setup in
-  \figref{fig:rot_bowl_pic} together with the definitions of some of
-  the notation used in the calculations. Due to the focal height
-  beeing measured slightly outside the exact center of the rod, by
-  $\rho$, a small correction $\delta$ has to be made to the measured
-  focal height. }
-\end{figure*}
-
 \subsection{Calibration}
 Firstly the laser pointer has to be perfecly vertical. This can neatly be
 calibrated by shining the laser down on the watersurface when it's not
@@ -224,47 +253,50 @@ vertical. Both of these steps are essential, since deviation from the
 center will change the measure value of $g$, as we will see in next
 section. 
 
+
 \subsection{Corrections}\label{sec:corrections}
 As shown in \figref{fig:rot_bowl} the measured focal height
 $\hat{h}$ is slightly of from the real focal height by 
-\begin{equation*}%\label{eq:correction}
+\begin{equation}%\label{eq:correction}
 \delta=\rho\cot 2\alpha
-\end{equation*}
+\end{equation}
 due to a finite width $\rho$ of the central rod. This width is easily
 measured with a pair of calipers.
 
 We now have to determine $\alpha$. First of we note that
 \begin{equation}\label{eq:dz/dr}
-\tan\alpha=\frac{\rd z}{\rd r}=\frac{2 z(r)}{r}.
+\tan\alpha=\dv{z}{r} =\frac{2 z(r)}{r}.
 \end{equation}
 Then we see from \figref{fig:rot_bowl} that 
-\begin{equation*}
+\begin{equation}
 \cot 2\alpha =\frac{\hat{h} - z(r)}{\hat{r}} 
 = \frac{\hat{h}}{\hat{r}}-\frac{r}{2\hat{r}}\tan\alpha,
-\end{equation*}
+\end{equation}
 where we used \eqref{eq:dz/dr} to substitute $z(r)$ in terms of
 $\tan\alpha$. By rewriting the last equation we get
-\begin{equation*}
+\begin{equation}
 \cot 2\alpha 
 -\frac{\hat{h}}{\hat{r}}
 +\frac{\hat{r}+\rho}{2\hat{r}}\tan\alpha  = 0.
-\end{equation*}
+\end{equation}
 only consisting of known or measured quantities and $\alpha$. From
 this stage $\alpha$ can easily be obtained to a satisfying degree with
 regular numerical equation solvers.
+
+
 
 \section{Results}
 The results from the measurements together with the least square fitt
 are shown in \figref{fig:data}. The calculated value of the
 acceleration of gravity comes out as
-\begin{equation*}
+\begin{equation}
 g=\unit[9.78\pm 0.13]{m/s^2}
-\end{equation*}
-the uncertainty given is the standard deviation in the mean.
+\end{equation}
+the uncertainty given is the standard error in the mean.
 
 
 \begin{figure*}\centering 
-\includegraphics[width=.65\linewidth]{g_minsta_kvadrat.pdf}
+\includegraphics[width=.8\linewidth]{g_minsta_kvadrat.pdf}
 \caption{\label{fig:data} Measurements of the focal height $h$ (with
   corrections for a center rod of non-zero width) plotted against
   $1/(2\omega^2)$. The acceleration of gravity $g$ is now given as the
@@ -275,26 +307,36 @@ the uncertainty given is the standard deviation in the mean.
 \end{figure*}
 
 
+
 \section{Discussion}
-As we can see, the result comes out close to the familiar value of $g$
-as $\unit[9.8]{m/s^2}$. However, the error, of around 13\,\%, in this
-method doesn't make this the most accurate way to measure $g$, but as
-stated before this method is more of an educational experiment than a
-precision measurement. And as such, this experiment manages to combine
-both knowlege in mechanics and optics together with some careful
-thought needed to, for example, find the correction $\delta$.
+Since this is a completely new method of measureing $g$, it is not
+easy to compare this particular result to other's. The closest
+comparison we can make is to required results in
+IPhO~2001~\cite{IPhO2001}. In the solutions to their problem
+\cite{IPhO2001} states that $g$ could be measured to
+$\unit[9.8]{m/s^2}$ with a standard error of $\unit[0.2]{m/s^2}$. So
+compared to these results our seems to be atleast as good, or perhaps
+eaven a little better than other methods using a rotating liquid. 
+
+With this said, the error in this method is however, considerably
+bigger than some of the most sofisticated pedulum
+methods~\cite{Candela2001}. But as stated before, this
+method is more of an educational experiment than a precision
+measurement. And as such, this experiment manages to combine both
+knowlege in mechanics and optics, together with some careful thought
+needed, for example to find the correction $\delta$. 
 
 The significance of the correction due to finite width of the central
 rod, $\delta$, is quite notable. The value of $g$ comes out to be only
 about $\unit[9.2]{m/s^2}$ \emph{without} these corrections. This
-demonstrates the necessity of the calculations made in section
-\ref{sec:corrections}. 
-%So if a student don't take this into account he or she will notice it
-%and have to examine his or her experiment.
+demonstrates the necessity of the calculations made in
+section~\ref{sec:corrections}. 
 
+
+\subsection{Experimental improvements}
 Most of the uncertainty in the result arose from small ripples on the
 water surface leading to a gittery motion of the reflected
-laserbeam. Both Berg\cite{Berg1990} and IPhO\cite{IPhO2001} used
+laserbeam. Both Berg~\cite{Berg1990} and IPhO~\cite{IPhO2001} used
 glycerin as the liqud in thier experiments. Due to the high viscosity
 of glycerin, the ripples causing the uncertainties would have lessend.
 However as this experiment was primarily aimed as an experiment with a
@@ -305,6 +347,8 @@ preferably a bowl with vertical walls. Because the maximal rotational
 speed will be limited by the slope of the walls, since the walls have
 to have a steeper slope than the watersurface.
 
+
+\subsection{Merits as a laboratory exercise}
 The experiment described here can be done as a shorter project in high
 school or lab exercise for first year undergraduate students. One
 sholud note though, that to set up this experiment will take around
@@ -313,6 +357,45 @@ desired experimental accuracy. If this experiment is done as a
 project, the student could perhaps also try to compare this method to
 other more common methods.
 
+As a way to move away from expository lab exercises, the method in
+this article could be given as a more open problem to the
+students. Depending on to what degree of replication of this exercise
+is wanted, the student could for example be asked to determine $g$
+using only some given equipment. But as always when there's no
+``recipe'' to follow, some unintended solutions migth appear --- like
+the one in \cite{IPhO2001}. Althogh this might not be an entirely bad
+thing. 
+
+The instruction, to determine something using a given set of
+equipments and no information regarding the procedure, is very similar
+to how a contestant in physics competitions, like IPhO, is presented
+with their problems. Therefore an exercie set up with these minimal
+instructions, might be most suited for students who already have a
+good understandig of physics. 
+
+Althogh these minimal instructions are common in IPhO, the problem in
+2001~\cite{IPhO2001} had quite a lot of hints given to the
+contestants. This indicates that the concept, of measuring $g$ with a
+rotating liquid surface, could be too challenging for most students
+with out help. Perhaps one could base a laboratory instruction in the
+problem instructions given in \cite{IPhO2001}. 
+
+
+
+\section{Conclusion}
+This is a new, quite out of the ordinary, method to measure the
+acceleration of gravity $g$. As an experimental method it fares well
+compared to similar methods~\cite{IPhO2001}, but not as well to some
+of the most accurate methods \cite{Candela2001}. 
+
+As a laboratory exercie this method might prove quite challenging to
+most students. But with sufficint help, the student will have used a
+wide variety of different knowelge to reach the end result. The
+student will also have seen the focusing property of parabolic mirrors
+demonstrated while doing this experiment.
+
+
+
 
 \section*{Acknowledgments}
 We are very grateful to the personell in the mashineshop at the
@@ -320,23 +403,10 @@ Physics Department at Chalmers. We thank Lars Hellberg and Jan-Åke
 Wiman for constructing and balancing the rotating disk so that the
 experiments could be performed. 
 
-%%OBS behövs en fil: mybibliography.bib
-\bibliographystyle{unsrt}
+
+
+%Bibliography
+\bibliographystyle{ieeetr}
 \bibliography{bibliography}
 
-
-% \clearpage
-% %Gör om sidnumreringen i appendix
-% \setcounter{page}{1}
-% \renewcommand*{\thepage}{\Alph{section}\arabic{page}}
-% %lägger till 'Bilagor' som part för att inte få med någon sidnumrering.
-% \addcontentsline{toc}{part}{Bilagor}
-% \appendix
-
-
-
 \end{document}
-
-
-
-
