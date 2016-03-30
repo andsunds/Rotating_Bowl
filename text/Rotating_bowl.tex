@@ -25,8 +25,9 @@
 
 \begin{document}
 
-\title{Measurement of the acceleration of gravity by locating the
-  focal point of a rotating water surface} 
+\title{A new method for measuring the acceleration of gravity with the
+  surface of a liquid in a rotating bowl by locating the focal point
+  of the parabola formed} 
 
 \author{Andréas Sundström$^*$
 \and Tom Adawi$^\dagger$
@@ -37,9 +38,9 @@
 \twocolumn[
   \begin{@twocolumnfalse}
     \maketitle
-    \noindent\small%footnotesize
+    \noindent\footnotesize
     $^*$ Engineering Physics, Chalmers University of Technology,
-    Gothenburg, Sweden\\ 
+    Gothenburg, Sweden,
     \textcolor{blue}{ \newcommand{\andsunds}{andsunds@chalmers.se}
       \href{mailto:\andsunds}{\nolinkurl{\andsunds}}
     }
@@ -55,7 +56,9 @@
     using a rotating liquid surface and a laserpointer. The main
     components of this metod is that a rotating liquid surface will
     form a parabola and that this parabola will focus the light to a
-    known focal point.
+    known focal point. By measuring the height of this focal point,
+    $g$ could be determined to $9.78\pm0.13\,\unit{m/s^2}$, which is
+    not bad compared to similar methods. 
     \end{abstract}
     \centerline{
       \line(1,0){360}
@@ -71,12 +74,13 @@ classroom. Usually this is done with some sort of pendulum or free fall. In a
 case of experimental simplicity most of theese methods are hard to beat. 
 However, most pendulum experiments are done from an expositiory
 instruction, which is one of the most critizied laboratory
-intructions~\cite{Domin1999}. From the student's point of view, a pendulum experiment
+intructions~\cite{Domin1999}. From the student's point of view, a
+pendulum experiment 
 won't excite much experimental creativity --- there's only to follow the
 given ``recipe''. 
 
 A more thought-provoking way to measure $g$ is to study the surface of
-a liquid in a rotating bowl. More precisely, the watersurface will
+a liquid in a rotating bowl. More precisely, the surface will
 form a parabolic mirror, which will focus incoming planar light. This
 is a property of parabolic mirrors most of us are familiar with, but
 have never observed directly. 
@@ -86,7 +90,7 @@ problem in the International Physics Olympiad (IPhO\footnotemark{})
 2001~\cite{IPhO2001}. So this method already have quite good gounds as
 a challenging lab exercise. However, in IPhO a different aspect of the
 parabolic surface was used to determine $g$. Other than this, no
-previous description of the use of a rotating liquid surface to
+previous descriptions on the use of a rotating liquid surface to
 dertermine $g$ have been found.
 \footnotetext{IPhO is an international physics competition for
   talented high school students from about 80 countries. } 
@@ -132,8 +136,8 @@ Here there are three unknown exponents.
 
 However, it's easier to study the relationships of dinesionless
 parameters, so $z/r$ is studied instead. Since this is dimensionless,
-the relation to $z/r$ must be with other parameters which are also
-dimensionless. The only posible solution is therefore
+the relation to $z/r$ must be with other combinations of parameters
+which are also dimensionless. The only posible solution is therefore
 \begin{equation}\label{eq:dim}
 \frac{z}{r} \propto \left(\frac{r\omega^2}{g}\right)^\alpha, 
 \end{equation}
@@ -148,7 +152,7 @@ More than this can not be said about the surface given only a
 dimensional analysis. Since it's known that the surface should be
 parabolic, it follows that $\alpha=1$. 
 Which is probably one of the most likely hypothesis a student would've
-made at a first glance.  
+made at first glance.  
 
 \subsubsection{Theoretical and experimental confirmation}
 The dimensional analysis showed that more information is needed to get
@@ -174,7 +178,9 @@ set of metal rods.
 The fact that the surface is parabolic can then be used optically. A
 parabolic mirror will reflect any vertically incoming light to the
 focal point of that parabola. This property was used by
-Berg~\cite{Berg1990} in 1990 to focus light into an optical image. 
+Berg~\cite{Berg1990} in 1990 to focus light into an optical
+image. There's even a telescope, the Large Zenith
+Telescope~\cite{LargeZenith}, which uses a rotating mercury mirror. 
 
 The focus of the parabola in \eqref{eq:parabola} is located at the
 height~\cite{Physics_Handbook} 
@@ -192,7 +198,7 @@ frequency $\omega$ influence the value of $g$ making this method
 experimentally quite clean with only two parameters to measure. 
 
 Neither of these steps require very complicated theoretical caluculations, but
-the steps are not all trivial. All in all the main principle here will
+the steps are not all trivial. All in all, this method will
 give the students an exercise in combinding knowledge from two parts
 of physics. At the same time the student's experimental creativity can
 be used as there are many ways of locating the focal point. 
@@ -203,9 +209,31 @@ be used as there are many ways of locating the focal point.
 \section{Method and apparatus}
 The apparatus shown in \figref{fig:rot_bowl_pic} consists of a bowl of water
 on a spinning disk, a laserpointer, a central rod marking out the axis of
-rotation, and a photodiode for measureing the speed of rotation. The spinning
+rotation, and a photodiode for measuring the speed of rotation. The spinning
 disk was driven by a DC motor so the rotational speed could be
-adjusted by varying the voltage applied to the motor. 
+adjusted by varying the voltage applied on the motor. 
+
+The focal point will be located somewhere along the axis of rotation. So when
+shining a laser vertically down on the parabolic surface, the refection will hit
+the central rod at the height $h$ over the vertex, which can be measured
+using a narrow ruler. 
+
+Then by varying the rotational speed and measuring the focal height for
+different speeds, a linear regression could be made for $g$ as the
+slope of the cuve of $h$ plotted against $1/(2\omega^2)$. 
+Measurements were taken at two different radial distances from the
+center to verify that the radial distance has no impact on the measured
+value of $g$. 
+
+The rotational speed $\omega$ was measured with a photodiode connected
+to a digital oscilloscope wich could record several periods of
+rotation. Though a more readily availible option, is to connect the
+photodiode to a computer's microphone input and record the signal as a
+``sound'' file on the computer, as \cite{Sabatka2010} did. Since
+$\omega$ is one of the two parameters directly determining the value
+of $g$, it's recomendet to measure the periods with some kind of
+digital logging device such as an oscilloscope or computer, to
+minimize uncertainty in this parameter.
 
 \begin{figure}
 \centering
@@ -217,34 +245,11 @@ adjusted by varying the voltage applied to the motor.
 \label{fig:rot_bowl_pic} 
 \end{figure}
 
-The focal point will be located somewhere along the axis of rotation. So when
-shining a laser vertically down on the parabolic surface the refection will hit
-the central rod and the height $h$ over the vertex can be measured
-using a narrow ruler. 
-
-Then by varying the rotational speed and measureing the focal height for
-different speeds a linnear regression could be made for $g$ as the
-slope of the cuve of $h$ plotted against $1/(2\omega^2)$. 
-Measurements were taken at two different radial distances from the
-center to verify that the radial distance has no impact on the measured
-value of $g$. 
-
-The rotational speed $\omega$ was measured with a photodiode connected
-to a digital oscilloscope wich could record several periods of
-rotation. Though a more readily availible option is to connect the
-photodiode to a computers microphone input and record the signal as a
-``sound'' file on the computer, as \cite{Sabatka2010} did. Since
-$\omega$ is one of the two parameters directly determining the value
-of $g$, it's recomendet to measure the periods with some kind of
-digital logging device such as an oscilloscope or computer, to
-minimize uncertainty in this parameter.
-
-
 \subsection{Calibration}
 Firstly the laser pointer has to be perfecly vertical. This can neatly be
 calibrated by shining the laser down on the watersurface when it's not
-rotating. The laserbeam will then be perfectly vertical when the
-reflection hits the source due to the watersurface beeing perfectly
+rotating. The laserbeam will be perfectly vertical when the
+reflection hits the source, due to the watersurface beeing perfectly
 horisontal when still.
 
 To get the central rod centered, a center mark was put in the rotating
@@ -254,13 +259,13 @@ center will change the measure value of $g$, as we will see in next
 section. 
 
 
-\subsection{Corrections}\label{sec:corrections}
+\subsection{Correction}\label{sec:corrections}
 As shown in \figref{fig:rot_bowl} the measured focal height
-$\hat{h}$ is slightly of from the real focal height by 
+$\hat{h}$ is slightly off from the real focal height by 
 \begin{equation}%\label{eq:correction}
 \delta=\rho\cot 2\alpha
 \end{equation}
-due to a finite width $\rho$ of the central rod. This width is easily
+due to a finite width, $\rho$, of the central rod. This width is easily
 measured with a pair of calipers.
 
 We now have to determine $\alpha$. First of we note that
@@ -270,7 +275,7 @@ We now have to determine $\alpha$. First of we note that
 Then we see from \figref{fig:rot_bowl} that 
 \begin{equation}
 \cot 2\alpha =\frac{\hat{h} - z(r)}{\hat{r}} 
-= \frac{\hat{h}}{\hat{r}}-\frac{r}{2\hat{r}}\tan\alpha,
+= \frac{\hat{h}-\frac{r}{2}\tan\alpha }{\hat{r}},
 \end{equation}
 where we used \eqref{eq:dz/dr} to substitute $z(r)$ in terms of
 $\tan\alpha$. By rewriting the last equation we get
@@ -309,22 +314,21 @@ the uncertainty given is the standard error in the mean.
 
 
 \section{Discussion}
-Since this is a completely new method of measureing $g$, it is not
+Since this is a completely new method of measuring $g$, it is not
 easy to compare this particular result to other's. The closest
-comparison we can make is to required results in
+comparison we can make is to the results in
 IPhO~2001~\cite{IPhO2001}. In the solutions to their problem
-\cite{IPhO2001} states that $g$ could be measured to
+they state that $g$ could be measured to
 $\unit[9.8]{m/s^2}$ with a standard error of $\unit[0.2]{m/s^2}$. So
-compared to these results our seems to be atleast as good, or perhaps
+compared to these results, our's seems to be atleast as good, or perhaps
 eaven a little better than other methods using a rotating liquid. 
 
-With this said, the error in this method is however, considerably
-bigger than some of the most sofisticated pedulum
-methods~\cite{Candela2001}. But as stated before, this
-method is more of an educational experiment than a precision
-measurement. And as such, this experiment manages to combine both
-knowlege in mechanics and optics, together with some careful thought
-needed, for example to find the correction $\delta$. 
+With this said, the error in this method is considerably larger than
+some of the most sofisticated pedulum methods~\cite{Candela2001}. But
+as stated before, this method is more of an educational experiment
+than a precision measurement. And as such, this experiment manages to
+combine both knowlege in mechanics and optics, together with some
+careful thought needed, for example to find the correction $\delta$. 
 
 The significance of the correction due to finite width of the central
 rod, $\delta$, is quite notable. The value of $g$ comes out to be only
@@ -339,7 +343,7 @@ water surface leading to a gittery motion of the reflected
 laserbeam. Both Berg~\cite{Berg1990} and IPhO~\cite{IPhO2001} used
 glycerin as the liqud in thier experiments. Due to the high viscosity
 of glycerin, the ripples causing the uncertainties would have lessend.
-However as this experiment was primarily aimed as an experiment with a
+However, as this experiment was primarily aimed as an experiment with a
 simple and inexpensive setup we used water instead.  
 
 Another way to increas accuracy would be to use a bigger bowl,
@@ -347,6 +351,12 @@ preferably a bowl with vertical walls. Because the maximal rotational
 speed will be limited by the slope of the walls, since the walls have
 to have a steeper slope than the watersurface.
 
+There's also other way to locate the focal point. For example two
+different laser could be used. By shining the two laser beams
+vertically down at two different points on the rotating surface, the
+focus is then located at the point of intersection od the reflected
+beams. This will eliminate the need to calculate the correction in
+section~\ref{sec:corrections}. 
 
 \subsection{Merits as a laboratory exercise}
 The experiment described here can be done as a shorter project in high
@@ -359,7 +369,7 @@ other more common methods.
 
 As a way to move away from expository lab exercises, the method in
 this article could be given as a more open problem to the
-students. Depending on to what degree of replication of this exercise
+students. Depending on to what degree of replication of this method
 is wanted, the student could for example be asked to determine $g$
 using only some given equipment. But as always when there's no
 ``recipe'' to follow, some unintended solutions migth appear --- like
