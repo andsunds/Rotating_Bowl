@@ -67,9 +67,9 @@ science~\cite{Domin1999}.
 In this paper, we describe a novel and more thought-provoking way to
 measure the acceleration of gravity. The main idea of the method is to
 study the surface of a liquid in a rotating bowl. The surface will
-form a \emph{parabolic reflector}~\cite{Berg1990}, which will focus incoming planar
-light. In the next section we show that the focal point of the parabolic reflector is located at the
-height
+form a \emph{parabolic reflector}~\cite{Berg1990}, which will focus
+incoming planar light. In the next section we show that the focal
+point of the parabolic reflector is located at the height
 \begin{equation}
 h=\frac{g}{2\omega^2}
 \end{equation}
@@ -103,8 +103,58 @@ determine the acceleration of gravity.
 
 \section{Theoretical background}
 
+\begin{figure}\centering
+\resizebox{1\linewidth}{!}{\input{Figures/vattenparabel.pdf_t}}
+\caption{Cross section of the liquid surface in a rotating vessel. The
+  surface will be perpendicular to the net acceleration in the
+  rotating frame of reference. Since the centrifugal acceleration will
+  increase linearly with $r$, so will the slope of the surface
+  ${\nicefrac{\dd{z}}{\dd{r}}=\tan\alpha}$. }
+\label{fig:parabola} 
+\end{figure}
 
-\begin{figure*}\centering
+
+
+By studying the centrifugal force in the rotating frame of reference
+alongside gravity, we see from \figref{fig:parabola} that the 
+angle $\alpha$ of the surface depends on $g$ and the centrifugal
+acceleration $a_c$. To obtain the full relationship, we first note
+that the surface of a freely flowing liquid will be perpendicular to
+the percieved net acceleration. Then we note that the derivative of a
+function is equal to $\tan$ of the angle, whereby we can get an
+expression for the derivative of the slope of the surface in
+\figref{fig:parabola} 
+\begin{equation}\label{eq:slope}
+\dv{z}{r} = \tan\alpha = \frac{a_c}{g}.
+\end{equation}
+With the centrifugal acceleration $a_c=r\omega^2$, the equation
+for the surface can be found by integrating the left and right hand
+side of~\eqref{eq:slope}: 
+\begin{equation}\label{eq:parabola}
+z(r)=\frac{r^2\omega^2}{2g}.
+\end{equation}
+In 2010 \v{S}abatka and
+Dv\v{o}rák~\cite{Sabatka2010} also confirmed this experimentally using
+a set of metal rods. 
+
+The fact that the surface is parabolic can then be used optically. A
+parabolic mirror will reflect any vertically incoming light to the
+focal point of that parabola. This property was used
+by~\cite{Berg1990} to focus light into an optical image. There's even
+a telescope, the Large Zenith Telescope~\cite{LargeZenith}, which uses
+a rotating mercury mirror. 
+
+\begin{figure}\centering
+\resizebox{.55\linewidth}{!}{\input{Figures/angles.pdf_t}}
+\caption{The watersurface with the incoming and reflected light. Since
+  the angles in the figure sums to
+$\alpha+\beta= 90^\circ = \gamma+\beta$, the angle between the incoming
+light and the normal to the surface will be~$\gamma=\alpha$. }
+\label{fig:angles} 
+\end{figure}
+
+\begin{figure*}
+\centering
 \resizebox{.6\linewidth}{!}{\input{Figures/rot_bowl.pdf_t}}
 \caption{Schematic drawing of the setup together with the definitions
   of the notation used in the calculations. Due to the focal height
@@ -114,89 +164,46 @@ determine the acceleration of gravity.
 \label{fig:rot_bowl} 
 \end{figure*}
 
+To use the focusing property of a parabola, the height of the
+focal point has to be known. To find this, we begin by studying
+\figref{fig:angles}. There we see that, since we have the two right
+angles, between on one hand the incoming ligt and the horizontal line
+and on the other hand between the surface and the normal, both
+$\alpha+\beta = 90^\circ$ and $\gamma+\beta = 90^\circ$. Therfore the
+total angle between the incoming and refelcted light is $2\alpha$. 
 
-\begin{comment}
-To show that a liquid in a rotating vessel will form a parabolic
-surface, one can either study the forces on the liquid in the rotating
-frame of reference or simply start with some dimensional analysis. The
-study of the forces have been done before~\cite{Sabatka2010, Berg1990}
-and are not that hard to do. As to not repeat what's already been
-done, a short dimesional analysis is presented here instead of the
-full derivation. 
-
-All symbols used in the following sections are given in
-\figref{fig:rot_bowl}. 
-
-
-The method in this article relies on the fact that the surface is
-parabolic, but it won't use this dimensional analysis any further than
-as a novel way to, almost, derive the formula of the surface in a
-rotating bowl. 
-
-To begin with, an assessment of which parameters will affect $z$ must
-be made. One can here convince oneself that $z$, ideally, should be a
-function of the three parameters $r$, $\omega$, and~$g$. If a power
-law is assumed, the relationship can be written as
+Furthermore, we see from \figref{fig:rot_bowl} that the point where the
+reflected light crosses the axis of rotation is at the height 
 \begin{equation}
-z\propto r^a\, \omega^b\, g^c.
+h= z(r) + r\,\cot(2\alpha)
 \end{equation}
-Here there are three unknown exponents.
-
-However, it's easier to study the relationships of dimensionless
-parameters, so $z/r$ is studied instead. Since this is dimensionless,
-the relation to $z/r$ must be with other combinations of parameters
-which are also dimensionless. The only posible solution is therefore
-\begin{equation}\label{eq:dim}
-\frac{z}{r} \propto \left(\frac{r\omega^2}{g}\right)^\alpha, 
-\end{equation}
-where $\alpha$ now is the only unknown exponent.
-
-Furthermore, the surface should be smooth everywhere. In particular,
-the center of rotation can be a problem. The only possibility to get a
-smooth surface in the center is if $\nicefrac{\rd{z}}{\rd{r}}=0$ when
-$r=0$. This and \eqref{eq:dim} leads to the conclusion that $\alpha>0$.
-
-More than this can not be said about the surface given only a
-dimensional analysis. Since it's known that the surface should be
-parabolic, it follows that $\alpha=1$. 
-Which is probably one of the most likely hypothesis a student would've
-made at first glance.  
-
-The dimensional analysis showed that more information is needed to get the full picture of the situation. To get this, one can look at the forces acting on the liquid.
-\end{comment}
-
-By studying the centrifugal force in the rotating frame of reference
-alongside gravity, it can readily be shown that the gradient of the
-liquid surface will be proportional to the distance from the axis of
-rotation. This corresponds to a parabola. 
-
-More precisely the surface will follow the
-equation~\cite{Berg1990} 
-\begin{equation}\label{eq:parabola}
-z(r)=\frac{r^2\omega^2}{2g}.
-\end{equation}
-In 2010 \v{S}abatka and
-Dv\v{o}rák~\cite{Sabatka2010} confirmed this experimentally using a
-set of metal rods. 
-
-The fact that the surface is parabolic can then be used optically. A
-parabolic mirror will reflect any vertically incoming light to the
-focal point of that parabola. This property was used by
-Berg~\cite{Berg1990} in 1990 to focus light into an optical
-image. There's even a telescope, the Large Zenith
-Telescope~\cite{LargeZenith}, which uses a rotating mercury mirror. 
-
-The focus of the parabola in \eqref{eq:parabola} is located at the
-height~\cite{Physics_Handbook} 
+above the vertex of the parabola.
+To show that this will be a focal point, we have to show that $h$ is
+independent of $r$. To do this, we can use \eqref{eq:slope} and
+\eqref{eq:parabola} together with the trigonometric identity
 \begin{equation}
-h=\frac{g}{2\omega^2}
+\begin{aligned}
+\cot(2\alpha)
+&=\frac{\cos^2\alpha-\sin^2\alpha}{2\,\cos\alpha\,\sin\alpha}\\
+&=\frac{\cos\alpha}{2\sin\alpha}-\frac{\sin\alpha}{2\cos\alpha}\\
+&=\frac{1}{2}\left(\frac{1}{\tan\alpha} -\tan\alpha \right),
+\end{aligned}
 \end{equation}
-above the vertex of the parabola. So by locating the focal point of
-the parabola in \eqref{eq:parabola} the value of $g$ can then be
-calculated as 
+to obtain
 \begin{equation}
-g=2h\omega^2.
+h=\frac{r^2\omega^2}{2g} 
+   + \frac{r}{2}\left(\frac{g}{r\omega^2} -\frac{r\omega^2}{g} \right)
+=\frac{g}{2\omega^2}.
 \end{equation}
+Here we find indeed that $h$ is independent of $r$ (and $\alpha$),
+whereby the proof that a parabola will have a focus is complete. We
+can also note that this expression can be rewritten to get
+\begin{equation}
+g=2h\omega^2,
+\end{equation}
+which will be used to measure $g$. 
+
+
 
 \section{Experimental setup}
 
@@ -261,7 +268,7 @@ $\hat{h}$ is slightly off from the real focal height by
 due to a finite width, $\rho$, of the central rod. This width is easily
 measured with a pair of calipers.
 
-We now have to determine $\alpha$. First, we note that
+We now have to determine $\alpha$. First, we remember that
 \begin{equation}\label{eq:dz/dr}
 \tan\alpha=\dv{z}{r} =\frac{2 z(r)}{r}.
 \end{equation}
@@ -278,7 +285,7 @@ $\tan\alpha$. By rewriting the last equation, we get
 +\frac{\hat{r}+\rho}{2\hat{r}}\tan\alpha  = 0.
 \end{equation}
 This expression consists of known or measured quantities and $\alpha$. From
-this stage $\alpha$ can easily be obtained to a satisfying degree with
+this stage, $\alpha$ can easily be obtained to a satisfying degree with
 regular numerical equation solvers.
 
 
