@@ -73,7 +73,7 @@ A somewhat similar method for measuring the acceleration of gravity has been use
 First we find the equation for the surface in the rotating bowl. Then we use the equation to prove that a parabola will have a focal point, and in the process obtain a relationship between the height of the focal point and $g$.
 
 \begin{figure}\centering
-\resizebox{1\linewidth}{!}{\input{Figures/vattenparabel.pdf_t}}
+\resizebox{7.5cm}{!}{\input{fig1_parabola_code.tex}}
 \caption{Cross section of the liquid surface in a rotating vessel. The surface will be perpendicular to the net acceleration in the rotating frame of reference. Since the centrifugal acceleration will increase linearly with $r$, so will the slope of the surface ${\nicefrac{\dd{z}}{\dd{r}}=\tan\alpha}$. }
 \label{fig:parabola} 
 \end{figure}
@@ -91,7 +91,7 @@ In 2010 \v{S}abatka and Dv\v{o}rák~\cite{Sabatka2010} also confirmed this exper
 %The fact that the surface is parabolic can then be used optically. A parabolic mirror will reflect any vertically incoming light to the focal point of that parabola. This property was used by~\cite{Berg1990} to focus light into an optical image. There's even a telescopes, like the Large Zenith Telescope~\cite{LargeZenith}, which uses rotating mercury as the telescope's mirror. 
 
 \begin{figure}\centering
-\resizebox{.55\linewidth}{!}{\input{Figures/angles.pdf_t}}
+\resizebox{4cm}{!}{\input{fig2_angles_code.tex}}
 \caption{
 The watersurface with the incoming and reflected light. Since the angles in the figure sums to $\alpha+\beta= 90^\circ = \gamma+\beta$, the angle between the incoming light and the normal to the surface will be~$\gamma=\alpha$. }
 \label{fig:angles} 
@@ -99,7 +99,7 @@ The watersurface with the incoming and reflected light. Since the angles in the 
 
 \begin{figure*}
 \centering
-\resizebox{.6\linewidth}{!}{\input{Figures/rot_bowl.pdf_t}}
+\resizebox{9cm}{!}{\input{fig3_rot_bowl_code.tex}}
 \caption{
 Schematic drawing of the setup together with the definitions of the notation used in the calculations. Due to the focal height being measured slightly outside the exact center of the rod, by $\rho$, a small correction $\delta$ has to be made to the measured focal height.} 
 \label{fig:rot_bowl} 
@@ -154,10 +154,12 @@ The rotational speed, $\omega$, was measured with a photo-diode connected to a d
 
 \begin{figure}
 \centering
-\resizebox{6cm}{!}{\input{Figures/rot_bowl_pic.pdf_t}}
-\caption{A photograph of the setup running. The reflected beam from a laser pointer (outside frame) can be seen at the focal point on the central rod. The arm blocking the light to the photodiode can be seen as a blur in the lower left corner, } 
+\resizebox{6cm}{!}{\input{fig4_rot_bowl_pic_code.tex}}
+\caption{A photograph of the setup running. The reflected beam from a laser pointer (outside frame) can be seen at the focal point on the central rod. %The arm blocking the light to the photodiode can be seen as a blur in the lower left corner.
+} 
 \label{fig:rot_bowl_pic} 
 \end{figure}
+
 
 \subsection{Calibration}
 
@@ -201,7 +203,7 @@ g=\unit[9.78\pm 0.13]{m/s^2}.
 The uncertainty given is the standard error in the mean.
 
 \begin{figure*}\centering 
-\includegraphics[width=.8\linewidth]{g_minsta_kvadrat.pdf}
+\includegraphics[width=12cm]{fig5_data.pdf}
 \caption{
 Measurements of the focal height $h$ (with corrections for a center rod of non-zero width) plotted against $1/(2\omega^2)$. The acceleration of gravity $g$ is given as the slope of the least square fit to these data points. Measurements were taken at two different radial distances, $r$, from the center.}
 \label{fig:data} 
