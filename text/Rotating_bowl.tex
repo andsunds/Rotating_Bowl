@@ -33,8 +33,8 @@
 
 \begin{document}
 
-\title{Measuring $g$ using a rotating liquid mirror --
-  Encouraging students' experimental creativity} 
+\title{Measuring $g$ using a rotating liquid mirror:
+  Enhancing laboratory learning} 
 
 \newcommand{\andsunds}{andsunds@chalmers.se}
 \author{Andréas Sundström\footnote{Engineering Physics, Chalmers
@@ -46,31 +46,31 @@
 \maketitle
 
 \begin{abstract}
-We describe a low-cost yet experimentally challenging method to measure the acceleration of gravity, $g$, using a rotating liquid surface and a laser pointer. The key idea underpinning this novel method is that a rotating liquid surface will form a parabolic reflector which will focus the light to a known focal point. By measuring the height of the focal point, $g$ could be determined to $\unit[9.78 \pm 0.13]{m/s^2}$. We discuss the pedagogical merits of this method compared to more traditional methods for measuring $g$, and how it can be implemented as an experimental problem at different educational levels. 
+We describe a low-cost yet experimentally challenging method to measure the acceleration of gravity, $g$, using a liquid in a rotating bowl and a laser pointer. The idea underpinning this novel method is that the rotating liquid surface will form a parabolic reflector which will focus light into a unique focal point. By measuring the height of the focal point, $g$ could be determined to $\unit[9.78 \pm 0.13]{m/s^2}$. We discuss the pedagogical merits of this method compared to more traditional methods for measuring $g$, and how it can be implemented as an experimental problem at different educational levels. 
 \end{abstract}
 
 
 \section{Introduction}
 
-The acceleration of gravity, $g$, has been measured countless times in secondary school physics laboratories. This is usually done through some sort of pendulum or free fall experiment. In terms of experimental \emph{simplicity} these methods are hard to beat. On the other hand, these methods do not excite much experimental \emph{creativity}. In these cookbook-style labs, the students follow step-by-step instructions and there is little room for intellectual engagement. As pointed out by Germann et al.~\cite{Germann1996}, 
+The acceleration of gravity, $g$, has been measured countless times in secondary school and undergraduate physics laboratories. This is usually done through some sort of pendulum or free fall experiment. In terms of experimental \emph{simplicity} these methods are hard to beat. On the other hand, these methods do not excite much experimental \emph{creativity}. In these cookbook labs, the students follow step-by-step instructions and there is little room for intellectual engagement~\cite{Wieman2015}. As pointed out by Germann et al.~\cite{Germann1996}, 
 ``Recipe-like activities often short circuit opportunities to stimulate thinking by students''. 
-Consequently, cookbook labs have very limited impact on students' understanding of the nature and practice of science~\cite{Domin1999}. 
+Consequently, cookbook labs have basically no impact on students' understanding of the nature and practice of science~\cite{Domin1999}. 
 
 In this paper, we describe a novel and more thought-provoking way to measure the acceleration of gravity. The main idea of the method is to study the surface of a liquid in a rotating bowl. The surface will form a \emph{parabolic reflector}~\cite{Berg1990}, which will focus incoming planar light. In the next section we show that the focal point of the parabolic reflector is located at the height
-\begin{equation}
+\begin{equation}\label{eq:g}
 h=\frac{g}{2\omega^2}
 \end{equation}
-above the vertex, where $\omega$ is the angular frequency of the bowl. By locating the focal point with a laser pointer, the value of $g$ can be determined. Since only the focal height, $h$, and the angular frequency, $\omega$, will influence the value of $g$ this method is experimentally quite clean, with only two parameters to measure. 
+above the vertex, where $\omega$ is the angular frequency of the bowl. By locating the focal point with a laser pointer, the value of $g$ can be determined. Since only the focal height and the angular frequency will influence the value of $g$ this method is experimentally quite clean, with only two parameters to measure. 
 
-Since there are many ways to locate the focal point, for example, the proposed method can stimulate the students' experimental creativity. Moreover, the students are encouraged to integrate their knowledge from two areas of physics -- mechanics and optics. Michael Faraday said: 
+Since there are many ways to locate the focal point, for example, the proposed method can stimulate the students' experimental creativity. Moreover, the students are encouraged to combine their knowledge from two areas of physics -- mechanics and optics. Michael Faraday said: 
 ``I was never able to make a fact my own without seeing it''.
 Hence an additional pedagogical benefit of the proposed method, is that students actually get to \emph{see} the focal point of a parabolic reflector (see Figure 2). In this way, the proposed experiment to measure $g$ addresses the three fundamental objectives of laboratory instruction as defined by Ernst:
 ``First, the student should learn how to be an experimenter. Second, the laboratory can be a place for the student to learn new and developing subject matter. Third, laboratory courses help the student to gain insight and understanding of the real world''~\cite{Ernst1983}.
 
 A somewhat similar method for measuring the acceleration of gravity has been used as part of an experimental problem in the International Physics Olympiad, IPhO~\cite{IPhO2001}. However, in the IPhO problem a different aspect of the parabolic surface was used to determine $g$. They used the fact that the surface, in a rotating cylindrical vessel, will not change its height at a certain distance from the center, independent of rotational speed. Apart from this, we have not been able to find any previous reports of experiments that use a rotating liquid surface to determine the acceleration of gravity.
 
-\section{Theoretical background}
-First we find the equation for the surface in the rotating bowl. Then we use the equation to prove that a parabola will have a focal point, and in the process obtain a relationship between the height of the focal point and $g$.
+\section{Theory}
+We derive our central equation~\eqref{eq:g} in two steps. First, we show that the top surface of a liquid in a rotating cylindrical vessel will form a \emph{paraboloid}. We then derive an equation for the \emph{focal length} of this parabolic surface.
 
 \begin{figure}\centering
 \resizebox{7.5cm}{!}{\input{fig1_parabola_code.tex}}
@@ -78,7 +78,7 @@ First we find the equation for the surface in the rotating bowl. Then we use the
 \label{fig:parabola} 
 \end{figure}
 
-By studying the centrifugal acceleration in the rotating frame of reference alongside gravity, we see from figure~\ref{fig:parabola} that the angle $\alpha$ of the surface depends on $g$ and the centrifugal acceleration $a_c$ as $\tan\alpha=\nicefrac{a_c}{g}$. To obtain the full relationship, we first note that the surface of a freely flowing liquid will be perpendicular to the perceived net acceleration. Then we note that the derivative of a function is equal to the tangent of the angle to the horizontal line, whereby we can get an expression for the derivative of the slope of the surface in figure~\ref{fig:parabola}:
+By studying the centrifugal acceleration in the rotating frame of reference alongside gravity, we see from Figure~\ref{fig:parabola} that the angle $\alpha$ of the surface depends on $g$ and the centrifugal acceleration $a_c$ as $\tan\alpha=a_c/g$. To obtain the full relationship, we first note that the surface of a freely flowing liquid will be perpendicular to the perceived net acceleration. Then we note that the derivative of a function is equal to the tangent of the angle to the horizontal line, whereby we get an expression for the derivative of the slope of the surface in Figure~\ref{fig:parabola}:
 \begin{equation}\label{eq:slope}
 \dv{z}{r} = \tan\alpha = \frac{a_c}{g}.
 \end{equation}
@@ -86,14 +86,12 @@ With the centrifugal acceleration $a_c=r\omega^2$, the equation for the surface 
 \begin{equation}\label{eq:parabola}
 z(r)=\frac{r^2\omega^2}{2g}.
 \end{equation}
-In 2010 \v{S}abatka and Dv\v{o}rák~\cite{Sabatka2010} also confirmed this experimentally using a set of metal rods. 
-
-%The fact that the surface is parabolic can then be used optically. A parabolic mirror will reflect any vertically incoming light to the focal point of that parabola. This property was used by~\cite{Berg1990} to focus light into an optical image. There's even a telescopes, like the Large Zenith Telescope~\cite{LargeZenith}, which uses rotating mercury as the telescope's mirror. 
+This is the equation for a \emph{parabolic} surface. \v{S}abatka and Dv\v{o}rák~\cite{Sabatka2010} have described a simple experiment to verify the parabolic shape of a liquid in a rotating cylindrical vessel. 
 
 \begin{figure}\centering
 \resizebox{4cm}{!}{\input{fig2_angles_code.tex}}
 \caption{
-The watersurface with the incoming and reflected light. Since the angles in the figure sums to $\alpha+\beta= 90^\circ = \gamma+\beta$, the angle between the incoming light and the normal to the surface will be~$\gamma=\alpha$. }
+The water surface with the incoming and reflected light. Since the angles in the figure sums to $\alpha+\beta= 90^\circ = \gamma+\beta$, the angle between the incoming light and the normal to the surface will be~$\gamma=\alpha$. }
 \label{fig:angles} 
 \end{figure}
 
@@ -105,16 +103,15 @@ Schematic drawing of the setup together with the definitions of the notation use
 \label{fig:rot_bowl} 
 \end{figure*}
 
-To use the focusing property of a parabola, the height of the focal point has to be known. To find this, we begin by studying figure~\ref{fig:angles}. There we see that, since we have the two right angles, between on one hand the incoming ligt and the horizontal line and on the other hand between the surface and the normal, both 
+To find the focal length of the parabolic surface, we begin by studying Figure~\ref{fig:angles}. Since we have two right angles, between on the one hand the incoming light and the horizontal line and on the other hand between the surface and the normal, both 
 $\alpha+\beta = 90^\circ$ and $\gamma+\beta = 90^\circ$. 
-Therfore the total angle between the incoming and refelcted light is $2\alpha$. 
+Therefore the total angle between the incoming and reflected light is $2\alpha$. 
 
-Furthermore, we see from figure~\ref{fig:rot_bowl} that the point where the reflected light crosses the axis of rotation is at the height 
+Furthermore, we see from Figure~\ref{fig:rot_bowl} that the point where the reflected light crosses the axis of rotation is at the height 
 \begin{equation}
 h= z(r) + r\,\cot(2\alpha)
 \end{equation}
-above the vertex of the parabola.
-To show that this will be a focal point, we have to show that $h$ is independent of $r$. To do this, we can use \eqref{eq:slope} and \eqref{eq:parabola} together with the trigonometric identity
+above the vertex of the parabola. We now use the equations in \eqref{eq:slope} and \eqref{eq:parabola} together with the trigonometric identity
 \begin{equation}
 \begin{aligned}
 \cot(2\alpha)
@@ -129,26 +126,15 @@ h=\frac{r^2\omega^2}{2g}
    + \frac{r}{2}\left(\frac{g}{r\omega^2} -\frac{r\omega^2}{g} \right)
 =\frac{g}{2\omega^2}.
 \end{equation}
-Here we find indeed that $h$ is independent of $r$ (and $\alpha$). This property is not confined to this specific parbola, but rather to any parabola since \eqref{eq:focal_height} holds for any value of $\nicefrac{\omega^2}{2g}$. Hereby the proof that a parabola will have a focus is complete. 
-Lastly we rewrite \eqref{eq:focal_height} to get
-\begin{equation}
-g=2h\omega^2,
-\end{equation}
-which will be used later on to measure $g$. 
-
-
+This is the \emph{focal length} of our parabolic surface, and the equation that we set out to derive. Note that $h$ is \emph{independent} of $r$ (and $\alpha$). In other words, a parabolic surface has a \emph{unique} focal point.
 
 \section{Experimental setup}
 
-The experimental set up shown in figure~\ref{fig:rot_bowl_pic} consists of a bowl of water on a spinning disk, a laser pointer, a central rod marking out the axis of rotation, and a photo-diode for measuring the speed of rotation. The spinning disk was powered by a DC motor so the rotational speed could be adjusted by varying the voltage applied to the motor. 
+The experimental set up shown in Figure~\ref{fig:rot_bowl_pic} consists of a bowl of water on a spinning disk, a laser pointer, a central rod marking out the axis of rotation, and a photo-diode for measuring the speed of rotation. The spinning disk was powered by a DC motor so the rotational speed could be adjusted by varying the voltage applied to the motor. 
 
 The focal point will be located somewhere along the axis of rotation. When shining a laser vertically down at the parabolic surface, the refection will hit the central rod at the height $h$ over the vertex, which can be measured using a narrow ruler. 
 
-By varying the rotational speed and measuring the focal height for
-different speeds, a linear regression could be made for $g$ as the
-slope of the curve of $h$ plotted against $1/(2\omega^2)$. 
-Measurements were taken at two different radial distances from the
-center to verify that the radial distance has no impact on the measured value of $g$. 
+By varying the rotational speed and measuring the focal height for different speeds, a linear regression could be made for $g$ as the slope of the curve of $h$ plotted against $1/(2\omega^2)$.  Measurements were taken at two different radial distances from the center to verify that the radial distance has no impact on the measured value of $g$. 
 
 The rotational speed, $\omega$, was measured with a photo-diode connected to a digital oscilloscope which could record several periods of rotation. A more readily available option is to connect the photo-diode to a computer's microphone input and record the signal as a ``sound'' file on the computer, as in~\cite{Sabatka2010}. Since $\omega$ is one of the two parameters directly determining the value of $g$, it's recommended to measure the periods with some kind of digital logging device, such as an oscilloscope or computer, to minimize uncertainty in this parameter.
 
@@ -170,7 +156,7 @@ To get the central rod centered, a center mark was put in the rotating disc. A s
 
 \subsection{Correction}\label{sec:corrections}
 
-As shown in figure~\ref{fig:rot_bowl}, the measured focal height $\hat{h}$ is slightly off from the real focal height by 
+As shown in Figure~\ref{fig:rot_bowl}, the measured focal height $\hat{h}$ is slightly off from the real focal height by 
 \begin{equation}%\label{eq:correction}
 \delta=\rho\cot 2\alpha
 \end{equation}
@@ -180,7 +166,7 @@ We now have to determine $\alpha$. First, we remember that
 \begin{equation}\label{eq:dz/dr}
 \tan\alpha=\dv{z}{r} =\frac{2 z(r)}{r}.
 \end{equation}
-Then, we can see from figure~\ref{fig:rot_bowl} that 
+Then, we can see from Figure~\ref{fig:rot_bowl} that 
 \begin{equation}
 \cot 2\alpha =\frac{\hat{h} - z(r)}{\hat{r}} 
 = \frac{\hat{h}-\frac{r}{2}\tan\alpha }{\hat{r}},
@@ -196,7 +182,7 @@ This expression consists of known or measured quantities and $\alpha$. From this
 
 \section{Results and discussion}
 
-The results from the measurements together with the least square fit are shown in figure~\ref{fig:data}. The calculated value of the acceleration of gravity comes out as
+The results from the measurements together with the least square fit are shown in Figure~\ref{fig:data}. The calculated value of the acceleration of gravity comes out as
 \begin{equation}
 g=\unit[9.78\pm 0.13]{m/s^2}.
 \end{equation}
@@ -214,6 +200,9 @@ Since this is a new method for measuring $g$, it is not easy to compare our resu
 The error in our method is, however, considerably larger than the error in some of the most sophisticated pendulum methods~\cite{Candela2001}. But as mentioned in the introduction, the proposed method has several pedagogical advantages compared to more traditional methods for measuring $g$. Apart from encouraging experimental creativity, this method encourages students to consider experimental corrections. 
 
 The significance of the correction, $\delta$, due to the finite width of the central rod is quite notable. The value of $g$ comes out to be only about $\unit[9.2]{m/s^2}$ \emph{without} these corrections. This demonstrates the necessity of the calculations made in section~\ref{sec:corrections}. 
+
+Although the proposed method for measuring $g$ is new, the focusing property of a rotating liquid surface has been used before. Berg~\cite{Berg1990} used this property to focus light into an optical image, while Graumann and Laue~\cite{Graumann1998} described several optics experiments involving a rotating liquid surface. 
+There are even telescopes today that use a rotating pool of mercury as the mirror to get a perfect parabolic reflector~\cite{Shiga2008}.
 
 \subsection{Experimental improvements}
 
@@ -237,7 +226,7 @@ gravity.
 
 Traditional laboratory instruction has been criticized for the
 emphasis it places on following step-by-step instructions, leaving
-little room for intellectual engagement~\cite{Domin1999}. In these
+little room for intellectual engagement~\cite{Wieman2015}. In these
 cookbook labs, ``virtually no attention is given to the planning of
 the investigation or to interpreting the
 results''~\cite{Domin1999}. As a consequence, ``virtually no
@@ -272,7 +261,7 @@ different educational levels.
 
 In this paper, we have described a novel method for measuring the acceleration of gravity. As an \emph{experimental} method, it fares well compared to similar methods~\cite{IPhO2001}, but not as well compared to some of the most accurate methods~\cite{Candela2001}. 
 
-As a \emph{pedagogical} method, it holds great potential. The overall aim was to break away from the traditional cookbook-style laboratory exercise and engage students in more authentic scientific thinking. With suitable scaffolding, the proposed method allows students to integrate knowledge from two areas of physics, mechanics and optics, and develop important skills, including experimental creativity. Moreover, students get to see the focusing property of parabolic mirrors while doing this experiment.
+As a \emph{pedagogical} method, it holds great potential to enhance laboratory learning. The overall aim was to break away from the cookbook lab and engage students in more authentic scientific thinking. With suitable scaffolding, the proposed method allows students to combine knowledge from two areas of physics, mechanics and optics, and develop important skills, including experimental creativity. Moreover, students get to see the focusing property of parabolic mirrors while doing this experiment.
 
 \section*{Acknowledgments}
 
