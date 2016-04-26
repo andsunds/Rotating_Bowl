@@ -1,0 +1,9 @@
+litt/
+#Onödig LaTeX-output
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+*.toc
