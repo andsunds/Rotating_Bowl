@@ -1,2 +1,10 @@
 #Rotating bowl
-This is a project to write an article about a new way to meassure g.
+This is a project to write an article about a new way to meassure <i>g</i>:  
+ "Measuring <i>g</i> using a rotating liquid mirror: Enhancing laboratory learning"  
+by Sundström, Andréas; Adawi, Tom
+
+  
+
+Submitted: 2015-04-24  
+Accepted:  2015-05-10  
+Pubished: 2015-__-__, in Pysics Edication  
