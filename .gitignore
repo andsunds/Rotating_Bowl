@@ -7,3 +7,5 @@ litt/
 *.out
 *.pdf
 *.toc
+
+*.fig.bak
